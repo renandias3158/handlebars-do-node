@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELA PESSOAS</title>
+</head>
+<body>
+    <H1><B>TELA DE PESSOAS</B></H1>
+    
+   <ol>
+    {{#each pessoas}}
+        <li>
+            <a href="/pessoas/{{id}}">
+        {{nome}}
+            </a>
+        </li>
+        <li>ID = {{id}} | NOME = {{nome}}</li>
+
+
+        <br>
+        <a href="/pessoa/:id"><B>ZECSU</B></a>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSWby1_HVBtYZdumTfJw2XCTpzHJb94A9kmA&s" alt="">
+        <BR>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLzYN_8Y8k14-RmSksrBpwdPqK8uf_NQYNDA&s" alt="">
+        <BR>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX4xot-XewvAcDi7YY_FFd0K3y_fqUbJoMYw&s" alt="">
+        <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx3NGSUIZhF7Pph9vrxN9UFHO9tY8EL-kWuA&s" alt="">
+        <br> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNiILNU9FDdzv0NhS17OSkw6q782yFe2av-g&s" alt="">
+        <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxpW3rfjmY89lAyogEomWxSTNizDZkhEgFGYI5hp93S8dviaTXO_H03FQr1PHIQoFjlZo&usqp=CAU" alt="">
+        <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWmQ4bu4hNi8Ri1z9sskv8L_uOnajIBXlRMQ&s" alt="">
+        <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvK6uKscbExRJWLOBd7Lkc6VLIlLd7UsCzSgpTO_6_IhybMFvXcVmqpM055Za4gcMcyTY&usqp=CAU" alt="">
+    {{/each}}
+   </ol>
+
+   <a href="/">RETORNARRRRRRRR</a>
+</body>
+</html>
