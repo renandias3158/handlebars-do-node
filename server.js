@@ -39,7 +39,7 @@ app.get('/pessoas/nova', (req, res) =>{
     
 })
 
-app.get('/pessoas/:id'), (req, res => {
+app.get('/pessoas/:id'), (req, res) => {
     const id = parseInt(req.params.id);
     const pessoa = pessoas.find(p => p.id === id);
     if(pessoa){
@@ -59,4 +59,5 @@ app.post('/pessoas'), (req, res) => {
     pessoas.push(novapessoa);
 
     res.render('listarPessoas', {pessoas})
+
 }
