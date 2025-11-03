@@ -37,27 +37,28 @@ app.get('/pessoas', (req, res) =>{
 app.get('/pessoas/nova', (req, res) =>{
     res.render('cadastrarPessoas');
     
-})
+});
 
-app.get('/pessoas/:id'), (req, res) => {
+app.get('/pessoas/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const pessoa = pessoas.find(p => p.id === id);
     if(pessoa){
         res.render('detalharPessoa', {pessoa});
     }else{
         res.status(484).send('Pessoa não encontrada')
-    }}
+    }});
 
-app.post('/pessoas'), (req, res) => {
+app.post('/pessoas', (req, res) => {
     const nome = req.body.nome;
 
     const novapessoa = {
         id: pessoas.length + 1,
         nome: nome
-    };
+    });
 
     pessoas.push(novapessoa);
 
     res.render('listarPessoas', {pessoas})
 
-}
+})
+
